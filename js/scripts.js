@@ -5,6 +5,15 @@ $(document).ready(function(){
   
   var string = prompt("Enter a sentence") 
   console.log(string);
+
+
+  $('#first').click(function(){
+    $("#sentence").text(string);
+  })
+
+  $('#second').click(function(){
+    $("#sentence").text(reverseConcatenate(string));
+  })
   // function capitalizeFirstAndLast(string){
   //   var capitalizeFirst = string.replace(/^./,string.charAt(0).toUpperCase());
   //   var capitalizeLast = capitalizeFirst.replace(/.$/,capitalizeFirst.charAt(string.length-1).toUpperCase());
