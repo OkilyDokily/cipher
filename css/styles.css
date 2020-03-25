@@ -13,3 +13,7 @@ div.bg-danger{
   margin-top: 0;
   height: 200px;
 }
+
+#third{
+  display:none;
+}

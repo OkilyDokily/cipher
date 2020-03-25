@@ -9,11 +9,20 @@ $(document).ready(function(){
 
   $('#first').click(function(){
     $("#sentence").text(string);
-  })
+    $("#third").slideDown();
+
+  });
 
   $('#second').click(function(){
     $("#sentence").text(reverseConcatenate(string));
-  })
+    $("#third").slideDown();
+
+  });
+
+  $('#third').click(function(){
+    $("#third").fadeOut();
+
+  });
   // function capitalizeFirstAndLast(string){
   //   var capitalizeFirst = string.replace(/^./,string.charAt(0).toUpperCase());
   //   var capitalizeLast = capitalizeFirst.replace(/.$/,capitalizeFirst.charAt(string.length-1).toUpperCase());
